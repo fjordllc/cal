@@ -1,0 +1,28 @@
+.main-visual
+  border-top: solid .125rem $main-color
+  border-bottom: solid .0625rem $main-color
+  background-image: image_url("main-visual.svg")
+  background-size: contain
+  background-repeat: repeat
+  background-position: center center
+
+.main-visual__inner
+  height: 25rem
+  max-width: 35.5rem
+  +margin(horizontal, auto)
+  background-color: $base-color
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  +media-breakpoint-down(sm)
+    height: auto
+
+.main-visual__logo-image
+  +size(100% auto)
+  display: block
+  +margin(horizontal, auto)
+
+.main-visual__lead
+  margin-top: 1.5rem
+  +text-block(1.75rem 1.45, center 700 $main-color)

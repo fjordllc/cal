@@ -1,0 +1,14 @@
+.footer
+  +main-background
+  .container
+    +media-breakpoint-down(sm)
+      +padding(horizontal, 0)
+
+.footer__inner
+  display: flex
+  flex-direction: row-reverse
+  align-items: flex-end
+  +padding(vertical, 3rem)
+  +media-breakpoint-down(sm)
+    flex-direction: column
+    +padding(vertical, 0 2rem)

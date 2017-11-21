@@ -1,0 +1,24 @@
+.home-method-features-item
+  display: flex
+  &:not(:last-child)
+    margin-bottom: 1.5rem
+
+.home-method-features-item__header
+  flex: 0 0 18rem
+  display: flex
+  justify-content: flex-end
+  padding-right: 1.5rem
+
+.home-method-features-item__title
+  +text-block(1.125rem 1.45)
+
+.home-method-features-item__body
+  padding-left: 1.5rem
+  .home-method-features-item:nth-child(1) &
+    border-left: solid .25rem #a7d8df
+  .home-method-features-item:nth-child(2) &
+    border-left: solid .25rem #e9d1b8
+  .home-method-features-item:nth-child(3) &
+    border-left: solid .25rem #badfc0
+  p
+    +text-block(.875rem 1.6)

@@ -1,0 +1,30 @@
+%header.header
+  .container
+    .header__inner
+      .header__site-title
+        = link_to "/", class: "header__site-title-link" do
+          = image_tag("logo.svg", alt: "CAL", class: "header__site-title-image")
+
+      %nav.header-nav
+        %ul.header-nav__items
+          %li.header-nav__item
+            = link_to "", class: "header-nav__item-link" do
+              サービス
+          %li.header-nav__item
+            = link_to "/entrusted-development/index.html", class: "header-nav__item-link" do
+              受託開発
+          %li.header-nav__item
+            = link_to "/works/index.html", class: "header-nav__item-link" do
+              実績
+          %li.header-nav__item
+            = link_to "/recruit/index.html", class: "header-nav__item-link" do
+              採用情報
+          %li.header-nav__item
+            = link_to "/profile/index.html", class: "header-nav__item-link" do
+              会社概要
+          %li.header-nav__item
+            = link_to "/access/index.html", class: "header-nav__item-link" do
+              アクセス
+          %li.header-nav__item
+            = link_to "https://pro.form-mailer.jp/fms/32b3750033768", class: "header-nav__item-link", target: "_blank" do
+              お問い合わせ

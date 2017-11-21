@@ -1,0 +1,31 @@
+.home-works-cases
+  max-width: 980px
+  +margin(horizontal, auto)
+
+.home-works-cases__items
+  display: flex
+  +margin(horizontal, -1.25rem)
+
+.home-works-cases-item
+  +padding(horizontal, 1.25rem)
+  flex: 0 0 33.33%
+
+.home-works-cases-item__inner
+  border: solid .0625rem #d9d9d9
+  padding: 1rem
+  height: 100%
+
+.home-works-cases-item__image-container
+  background-color: #ddd
+  margin-bottom: 1rem
+
+.home-works-cases-item__title
+  +text-block(1rem 1.4 .5rem, 600)
+
+.home-works-cases-item__title-link
+  +hover-link
+  color: $main-color
+
+.home-works-cases-item__body
+  p
+    +text-block(.8125rem 1.6)

@@ -1,0 +1,53 @@
+.home-services-features__items
+  display: flex
+  +margin(horizontal, -1.5rem)
+
+.home-services-features-item
+  flex: 0 0 25%
+  +padding(horizontal, 1.5rem)
+
+.home-services-features-item__link
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.home-services-features-item__image-container
+  +size(5.5rem)
+  background-color: $main-color
+  margin-bottom: 1rem
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  .home-services-features-item.is-development &
+    background-color: #1f9da7
+    background-image: linear-gradient(135deg, #1f9da7 0%, #53d04b 100%)
+  .home-services-features-item.is-staff-assist &
+    background-color: #d94343
+    background-image: linear-gradient(135deg, #d94343 0%, #7e8edd 100%)
+  .home-services-features-item.is-masse-series &
+    background-color: #eb7f37
+    background-image: linear-gradient(135deg, #eb7f37 0%, #dd56d9 100%)
+  .home-services-features-item.is-aocm &
+    background-color: #32a1ce
+    background-image: linear-gradient(135deg, #32a1ce 0%, #5dd05b 100%)
+
+.home-services-features-item__image
+  +size(60%)
+
+.home-services-features-item__title
+  +text-block(1rem 1 .75rem, cenetr 700 $main-color)
+
+.home-services-features-item__body
+  p
+    +text-block(.8125rem 1.6)
+
+.home-services-features-item__more
+  display: flex
+  margin-top: .75rem
+
+.home-services-features-item__more-link
+  +text-block(.5rem 1.45)
+  +hover-link-reversal
+  color: $main-color

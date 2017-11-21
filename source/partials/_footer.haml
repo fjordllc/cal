@@ -1,0 +1,22 @@
+%footer.footer
+  .container
+    .footer__inner
+      %nav.footer-nav
+        %ul.footer-nav__items
+          %li.footer-nav__item
+            = link_to "/regal.html", class: "footer-nav__item-link" do
+              利用規約
+          %li.footer-nav__item
+            = link_to "/privacy.html", class: "footer-nav__item-link" do
+              プライバシーポリシー
+          %li.footer-nav__item
+            = link_to "/privacy_legal.html", class: "footer-nav__item-link" do
+              個人情報のお取扱いについて
+          %li.footer-nav__item
+            = link_to "/qualification.html", class: "footer-nav__item-link" do
+              免責事項
+      .footer-author
+        = link_to "", class: "footer-author__title-link" do
+          = image_tag("logo-reversal.svg", alt: "CAL", class: "footer-author__title-image")
+        .footer-author__copylight
+          Copyright <i class="fa fa-copyright"></i> 株式会社コンピューターアドバイザー. All Rights Reserved.

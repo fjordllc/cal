@@ -1,0 +1,25 @@
+.footer-nav
+  flex: 100
+  +media-breakpoint-down(sm)
+    width: 100%
+    margin-bottom: 1rem
+
+.footer-nav__items
+  display: flex
+  +media-breakpoint-down(sm)
+    display: block
+
+.footer-nav__item
+  +padding(horizontal, .5rem)
+  +media-breakpoint-down(sm)
+    +padding(horizontal, 0)
+
+.footer-nav__item-link
+  +text-block(.875rem 1.45, $reversal-text)
+  +hover-link
+  +media-breakpoint-down(sm)
+    display: flex
+    height: 2.75rem
+    border-bottom: solid .0625rem rgba(white, .4)
+    align-items: center
+    +padding(horizontal, .75rem)

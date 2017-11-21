@@ -1,0 +1,14 @@
+.header-nav__items
+  display: flex
+  +margin(horizontal, -.5rem)
+  +media-breakpoint-down(sm)
+    display: none
+
+.header-nav__item
+  +padding(horizontal, .5rem)
+
+.header-nav__item-link
+  +size(auto 2.75rem)
+  +text-block(.875rem 1.45, center flex $main-color)
+  align-items: center
+  justify-content: center
