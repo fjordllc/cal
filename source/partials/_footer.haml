@@ -15,6 +15,10 @@
           %li.footer-nav__item
             = link_to "/qualification.html", class: "footer-nav__item-link" do
               免責事項
+          %li.footer-nav__item
+            .footer__privacy
+              = link_to "https://privacymark.jp/", class: "footer__privacy-link", taget: "_blank" do
+                = image_tag("10823626_85_JP.gif", class: "footer__privacy-image")
       .footer-author
         = link_to "", class: "footer-author__title-link" do
           = image_tag("logo-reversal.svg", alt: "CAL", class: "footer-author__title-image")

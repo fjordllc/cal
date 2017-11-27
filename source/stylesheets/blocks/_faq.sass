@@ -1,0 +1,29 @@
+.faq-item
+  &:not(:last-child)
+    margin-bottom: 2rem
+
+.faq-item__header
+  padding-left: 3.5rem
+  +position(relative)
+  +padding(vertical, .5rem)
+  min-height: 2.75rem
+  &::before
+    content: "Q"
+    +position(absolute, left 0, top 0, bottom 0)
+    background-color: #a7d8df
+    +text-block(1.25rem 1, flex #578287 800)
+    align-items: center
+    justify-content: center
+    +size(2.5rem)
+    border-radius: 50%
+
+.faq-item__title
+  +text-block(1rem 1.5, 600 #3f696e)
+
+.faq-item__body
+  +position(relative)
+  +padding(vertical, .75rem)
+  p
+    +text-block(.875rem 1.6 .5rem)
+  *:last-child
+    margin-bottom: 0

@@ -1,0 +1,64 @@
+.address
+  display: flex
+
+.address__map
+  flex: 0 0 360px
+  iframe
+    max-width: 100%
+    width: 100%
+
+.address__body
+  flex: 100
+  padding-left: 1.5rem
+
+.address__address
+  +text-block(.875rem 1.45)
+
+.address__address-link
+  +hover-link
+  color: $default-text
+
+.address__stations
+  margin-top: 1.25rem
+
+.address__station
+  +text-block(.875rem 1.45, block)
+  +position(relative)
+  padding-left: .875rem
+  &::before
+    content: ""
+    +size(.375rem)
+    display: block
+    +position(absolute, left 0, top .4375rem)
+    +main-background
+    border-radius: 50%
+  &:not(:last-child)
+    margin-bottom: .25rem
+
+.address__links
+  margin-top: 1.5rem
+
+.address__links-item
+  &:not(:last-child)
+    margin-bottom: .5rem
+
+.address__links-item-link
+  +text-block(.8125rem 1.45, $main-color flex)
+  border: solid .0625rem $main-color
+  max-width: 20rem
+  align-items: center
+  justify-content: center
+  height: 2.5rem
+  +position(relative)
+  transition: all .2s ease-out
+  &::before
+    +fa("\f105")
+    +size(2rem 100%)
+    +position(absolute, right 0, top 0, bottom 0)
+    +text-block(1rem 1, flex)
+    align-items: center
+    justify-content: center
+  &:hover
+    background-color: $main-color
+    color: $reversal-text
+    border-color: $main-color
