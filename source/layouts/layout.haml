@@ -5,11 +5,10 @@
     %meta{:charset => "utf-8"}
     %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}
     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}
-    / Use the title from a page's frontmatter if it has one
-    %title= current_page.data.title || "株式会社コンピュータアドバイザー"
     = stylesheet_link_tag "site"
     = stylesheet_link_tag "http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     = javascript_include_tag "mojik"
+    = partial "partials/favicons"
   %body.body
     .body__inner
       = partial "partials/header"
