@@ -1,9 +1,28 @@
 .routes-item
-  margin-bottom: 1.5rem
   display: flex
+  +position(relative)
+  &:not(:last-child)
+    margin-bottom: 1.5rem
+  +media-breakpoint-down(sm)
+    display: block
+    &:not(:last-child)
+      margin-bottom: 3rem
+      &::before
+        +fa("\f175")
+        +size(3rem)
+        +text-block(2rem 1, flex)
+        align-items: center
+        justify-content: center
+        +position(absolute, left 50%, bottom -3rem)
+        margin-left: -1.5rem
+        opacity: .7
+
 
 .routes-item__image-container
   flex: 0 0 18rem
+  +media-breakpoint-down(sm)
+    width: 100%
+    margin-bottom: .5rem
 
 .routes-item__image
   max-width: 100%
@@ -11,3 +30,9 @@
 .routes-item__description
   flex: 100
   padding-left: 1.5rem
+  +media-breakpoint-down(sm)
+    padding-left: 0
+  p
+    +text-block(.875rem 1.6)
+    +media-breakpoint-down(sm)
+      font-size: .75rem

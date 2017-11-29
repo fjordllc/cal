@@ -8,6 +8,10 @@ body
   flex: 100
 
 .container
+  +media-breakpoint-down(md)
+    +padding(horizontal, $container-horizontal-padding-md)
+  +media-breakpoint-down(sm)
+    +padding(horizontal, $container-horizontal-padding-sm)
   &.is-sm
     max-width: 40rem
   &.is-md

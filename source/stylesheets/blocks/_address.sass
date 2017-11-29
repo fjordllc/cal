@@ -1,8 +1,12 @@
 .address
   display: flex
+  +media-breakpoint-down(sm)
+    display: block
 
 .address__map
   flex: 0 0 360px
+  +media-breakpoint-down(sm)
+    margin-bottom: 1rem
   iframe
     max-width: 100%
     width: 100%
@@ -10,9 +14,13 @@
 .address__body
   flex: 100
   padding-left: 1.5rem
+  +media-breakpoint-down(sm)
+    padding-left: 0
 
 .address__address
   +text-block(.875rem 1.45)
+  +media-breakpoint-down(sm)
+    font-size: .75rem
 
 .address__address-link
   +hover-link
@@ -20,11 +28,15 @@
 
 .address__stations
   margin-top: 1.25rem
+  +media-breakpoint-down(sm)
+    margin-top: 1rem
 
 .address__station
   +text-block(.875rem 1.45, block)
   +position(relative)
   padding-left: .875rem
+  +media-breakpoint-down(sm)
+    font-size: .75rem
   &::before
     content: ""
     +size(.375rem)

@@ -10,7 +10,11 @@
 
 .home-recruit__title
   +text-block(2rem 1.45 .75rem, 700 $reversal-text center)
+  +media-breakpoint-down(sm)
+    font-size: 1.125rem
 
 .home-recruit__body
   p
     +text-block(1rem 1.6, $reversal-text center)
+    +media-breakpoint-down(sm)
+      font-size: .75rem

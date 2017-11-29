@@ -1,0 +1,78 @@
+.mobile-nav-button
+  +position(absolute, right 0, top 50%, 9999)
+  margin-top: -1.375rem
+  cursor: pointer
+  +size(2.75rem)
+  display: flex
+  flex-direction: column
+  align-items: center
+  +padding(horizontal, .625rem)
+  +padding(vertical, .75rem)
+
+  &.is-mobile-nav-open .mobile-nav-button__line:nth-child(1),
+  &.is-mobile-nav-open .mobile-nav-button__line:nth-child(3)
+    +size(1.5rem .125rem)
+    +position(absolute, top 20px)
+
+  &.is-mobile-nav-open .mobile-nav-button__line:nth-child(1)
+    transform: rotate(45deg)
+
+  &.is-mobile-nav-open .mobile-nav-button__line:nth-child(2)
+    display: none
+
+  &.is-mobile-nav-open .mobile-nav-button__line:nth-child(3)
+    transform: rotate(135deg)
+
+.mobile-nav-button__line
+  +size(100% .125rem)
+  background: $main-color
+  position: relative
+  transition: .4s ease
+  &:nth-of-type(2)
+    +margin(vertical, .3125rem)
+  .mobile-nav-button.is-mobile-nav-open &
+    background-color: $base-color
+
+
+//Mobile Menu
+
+.mobile-menu
+  display: block
+  max-width: 12rem
+  width: 100%
+  height: 100vh
+  background: #1e35a8
+  +position(absolute, right -100%, top 0, 9998)
+  transition: 0.4s ease
+  opacity: 0
+  &.is-mobile-nav-open
+    right: 0
+    opacity: 1
+
+  ul
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    padding: 0
+    a
+      +size(100% 2.75rem)
+      text-decoration: none
+      +text-block(.875rem 1.45, $reversal-text flex)
+      align-items: center
+      justify-content: flex-start
+      overflow: hidden
+      +padding(vertical, .75rem)
+      +padding(horizontal, 1rem)
+      border-top: solid .0625rem rgba(white, .1)
+    li:last-child a
+      border-bottom: solid .0625rem rgba(white, .1)
+
+body
+  &.is-mobile-nav-open
+    overflow: hidden
+
+.overlay
+  +position(fixed, left 0, top 0, right 0, bottom 0, 997)
+  background-color: rgba(black, .4)
+  +size(100%)
+  cursor: pointer

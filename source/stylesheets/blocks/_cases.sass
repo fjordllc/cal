@@ -7,11 +7,21 @@
   flex-wrap: wrap
   +margin(horizontal, -1.25rem)
   margin-bottom: -2rem
+  +media-breakpoint-down(md)
+    +margin(horizontal, -.75rem)
+  +media-breakpoint-down(md)
+    display: block
+    +margin(horizontal, 0)
 
 .cases-item
   +padding(horizontal, 1.25rem)
   flex: 0 0 33.33%
   padding-bottom: 2rem
+  +media-breakpoint-down(md)
+    +padding(horizontal, .75rem)
+  +media-breakpoint-down(sm)
+    +padding(horizontal, 0)
+    width: 100%
 
 .cases-item__inner
   border: solid .0625rem #d9d9d9
@@ -24,6 +34,8 @@
 
 .cases-item__title
   +text-block(1rem 1.4 .5rem, 600)
+  +media-breakpoint-down(sm)
+    font-size: .875rem
 
 .cases-item__title-link
   +hover-link
@@ -32,3 +44,5 @@
 .cases-item__body
   p
     +text-block(.8125rem 1.6)
+    +media-breakpoint-down(sm)
+      font-size: .75rem

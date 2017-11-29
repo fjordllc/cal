@@ -1,17 +1,25 @@
 .header
-  height: 3.5rem
-  +position(fixed, left 0, top 0, right 0)
+  height: $header-height
+  +position(fixed, left 0, top 0, right 0, 2)
   background-color: rgba($base-color, .8)
+  +media-breakpoint-down(sm)
+    height: $header-height-sm
 
 .header__inner
+  height: $header-height
   display: flex
   align-items: center
   justify-content: space-between
-  height: 3.5rem
+  +media-breakpoint-down(sm)
+    height: $header-height-sm
 
 .header__site-title-image
-  +size(auto 2.25rem)
+  +size(auto ($header-height - 1.25rem))
   display: block
+  +media-breakpoint-down(sm)
+    +size(auto ($header-height-sm - 1.25rem))
 
 body
-  padding-top: 3.5rem
+  padding-top: $header-height
+  +media-breakpoint-down(sm)
+    padding-top: $header-height-sm

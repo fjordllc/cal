@@ -14,8 +14,10 @@
   flex-direction: column
   align-items: center
   justify-content: center
+  +padding(vertical, 1.5rem)
   +media-breakpoint-down(sm)
     height: auto
+    +padding(vertical, 1.5rem)
 
 .main-visual__logo-image
   +size(100% auto)
@@ -23,5 +25,6 @@
   +margin(horizontal, auto)
 
 .main-visual__lead
-  margin-top: 1.5rem
   +text-block(2.75rem 1.45, center 700 $main-color)
+  +media-breakpoint-down(sm)
+    font-size: 1.25rem

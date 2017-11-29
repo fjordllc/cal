@@ -1,7 +1,7 @@
 .footer
   +main-background
   .container
-    +media-breakpoint-down(sm)
+    +media-breakpoint-down(md)
       +padding(horizontal, 0)
 
 .footer__inner
@@ -9,7 +9,7 @@
   flex-direction: row-reverse
   align-items: flex-end
   +padding(vertical, 3rem)
-  +media-breakpoint-down(sm)
+  +media-breakpoint-down(md)
     flex-direction: column
     +padding(vertical, 0 2rem)
 
@@ -20,8 +20,15 @@
   +size(2.5rem)
   align-items: center
   justify-content: center
-  +media-breakpoint-down(sm)
+  +media-breakpoint-down(md)
     margin-top: 1rem
+
+.footer__privacy
+  padding-right: $container-horizontal-padding-md
+  display: flex
+  justify-content: flex-end
+  +media-breakpoint-down(sm)
+    padding-right: $container-horizontal-padding-sm
 
 .footer__privacy-image
   +size(80%)
