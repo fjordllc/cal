@@ -8,6 +8,9 @@
   align-items: center
   +padding(horizontal, .625rem)
   +padding(vertical, .75rem)
+  display: none
+  +media-breakpoint-down(sm)
+    display: block
 
   &.is-mobile-nav-open .mobile-nav-button__line:nth-child(1),
   &.is-mobile-nav-open .mobile-nav-button__line:nth-child(3)
@@ -50,10 +53,7 @@
     opacity: 1
 
   ul
-    position: relative
-    top: 50%
-    transform: translateY(-50%)
-    padding: 0
+    +position(relative, top 3.125rem)
     a
       +size(100% 2.75rem)
       text-decoration: none
