@@ -25,12 +25,13 @@
 
 .cases-item__inner
   border: solid .0625rem #d9d9d9
-  padding: 1rem
+  padding: 1rem 1.5rem 1.5rem
   height: 100%
 
 .cases-item__image-container
-  background-color: #ddd
-  margin-bottom: 1rem
+  margin-bottom: .5rem
+  max-width: 10rem
+  +margin(horizontal, auto)
 
 .cases-item__title
   +text-block(1rem 1.4 .5rem, 600)
@@ -46,3 +47,12 @@
     +text-block(.8125rem 1.6)
     +media-breakpoint-down(sm)
       font-size: .75rem
+
+.cases-item__footer
+  display: flex
+  justify-content: flex-end
+  margin-top: .75rem
+
+.cases-item__footer-link
+  +text-block(.75rem 1)
+  +hover-link-reversal

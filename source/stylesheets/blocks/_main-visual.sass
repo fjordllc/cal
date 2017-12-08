@@ -7,9 +7,6 @@
 
 .main-visual__inner
   height: 25rem
-  max-width: 35.5rem
-  +margin(horizontal, auto)
-  background-color: $base-color
   display: flex
   flex-direction: column
   align-items: center
@@ -28,3 +25,10 @@
   +text-block(2.75rem 1.45, center 700 $main-color)
   +media-breakpoint-down(sm)
     font-size: 1.25rem
+
+.main-visual__sub-lead
+  margin-top: .75rem
+  +text-block(2.5rem 1.45, center 700 $main-color)
+  font-family: 'Crimson Text', serif
+  +media-breakpoint-down(sm)
+    font-size: 1rem

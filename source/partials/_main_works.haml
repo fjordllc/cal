@@ -1,0 +1,54 @@
+.cases
+  .cases__items
+    .cases-item
+      .cases-item__inner
+        - url = "/works/work-1.html"
+        .cases-item__image-container
+          = image_tag("work-1.svg", class: "cases-item__image")
+        %h3.cases-item__title
+          = link_to url, class: "cases-item__title-link" do
+            観光業向け レストラン船予約管理システム
+        .cases-item__body
+          %p
+            大型客船による観光・レストラン事業を運営されているＡ社様向け業務システム。
+            %br
+            予約の受付から始まり、乗船券の発行～ご精算、最終的には売上に関するの統計情報の出力までワンストップで実現しました。
+        %footer.cases-item__footer
+          = link_to url, class: "cases-item__footer-link" do
+            くわしく
+
+    .cases-item
+      .cases-item__inner
+        - url = "/works/work-2.html"
+        .cases-item__image-container
+          = image_tag("work-2.svg", class: "cases-item__image")
+        %h3.cases-item__title
+          = link_to url, class: "cases-item__title-link" do
+            運送業向け 配送スケジュール管理システム
+        .cases-item__body
+          %p
+            大手アパレル企業様からイベント会場への商品の配送を受託しているB社様。
+            %br
+            配送依頼をExcelで受領後、分類分け～協力会社への配送指示書の作成を全て手作業で行っていました。
+            %br
+            この業務をシステム化することで、業務効率の向上のほか、属人化してい業務の標準化や作業進捗の見える化を実現しました。
+        %footer.cases-item__footer
+          = link_to url, class: "cases-item__footer-link" do
+            くわしく
+
+    .cases-item
+      .cases-item__inner
+        - url = "/works/work-3.html"
+        .cases-item__image-container
+          = image_tag("work-3.svg", class: "cases-item__image")
+        %h3.cases-item__title
+          = link_to url, class: "cases-item__title-link" do
+            不動産業向け 基幹システム
+        .cases-item__body
+          %p
+            オフィスビルやマンション等の不動産の運営・管理をされているC社様。
+            %br
+            C社様の幅広い業務内容をカバーした営業事務支援システムと、会計・財務システムを一つの基幹システムとしてご提供しています。
+        %footer.cases-item__footer
+          = link_to url, class: "cases-item__footer-link" do
+            くわしく

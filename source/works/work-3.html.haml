@@ -1,0 +1,50 @@
+.work
+  = partial "work_header"
+  .page-contents
+    .container.is-sm
+      %header.work__header
+        .work__image-container
+          = image_tag("work-3.svg", class: "cases-item__image")
+        %h1.work__title
+          不動産業向け 基幹システム
+      .work__summary.is-long-text
+        %p
+          オフィスビルやマンション等の不動産の運営・管理をされているC社様。
+          %br
+          C社様の幅広い業務内容をカバーした営業事務支援システムと、会計・財務システムを一つの基幹システムとしてご提供しています。
+      %ul.work__features
+        %li.work__feature
+          .work__feature-label
+            .work__feature-label-title
+              特徴
+            .work__feature-label-count
+              1
+          .work__feature-value
+            営業事務支援機能と会計機能でデータを共有することで、営業の実績をリアルタイムで会計データへ反映。
+        %li.work__feature
+          .work__feature-label
+            .work__feature-label-title
+              特徴
+            .work__feature-label-count
+              2
+          .work__feature-value
+            伝票の発行～社内承認～会計への計上まで全て電子化することで、業務の大幅なスピードアップとペーパーレス化を実現。
+      %table.work__data
+        %tbody
+          %tr
+            %th
+              アーキテクチャ
+            %td
+              クライアント / サーバ型
+          %tr
+            %th
+              開発技術
+            %td
+              VB.Net2010、SQLServer2014
+          %tr
+            %th
+              実行環境
+            %td
+              \.NET Framework 4.6
+
+      = partial "work_action"

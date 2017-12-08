@@ -3,36 +3,57 @@
     .home-method__inner
       %header.home-content__header
         %h2.home-method__title.home-content__title
-          全体のバランスを考え<br>最適なシステムをご提案
-        -#
-          %h2.home-method__title.home-content__sub-title
-            だから120％の満足を提供できます
+          満足度120%のシステムを
+          %br
+          ご提供いたします！
       .home-method-features
         .home-method-features__items
           .home-method-features-item
             %header.home-method-features-item__header
+              = image_tag("method-1.svg", class: "home-method-features-item__image")
               %h3.home-method-features-item__title
-                的確な要求分析
+                お客様の問題解決が最優先！
+                %br
+                不要なシステムはご提案しません。
             .home-method-features-item__body
               %p
-                現在お客様が抱えている問題を、様々な角度から分析、問題の解決、改善のためのご提案をいたします。そのために、色々な方から現状のヒアリングをさせていただき、ご提案させていただきます。
-
+                システムの開発はあくまで
+                %br
+                ソリューションの手段の一つに過ぎません。
+            %footer.home-method-features-item__footer
+              = link_to "/entrusted-development/#development-1", class: "home-method-features-item__footer-link" do
+                くわしく
           .home-method-features-item
             %header.home-method-features-item__header
+              = image_tag("method-2.svg", class: "home-method-features-item__image")
               %h3.home-method-features-item__title
-                費用対効果の高いシステム開発
+                システムのご提案～製造～導入まで、
+                %br
+                全て自社社員が担当します。
             .home-method-features-item__body
               %p
-                パッケージソフトや簡易ツールの利用により、可能な限り製造コストを抑え要求に十分応えるシステムを開発します。また、可能な限り外注を控えることで、お客様のご意向を末端の開発者まで汲み取り、システムのアンマッチングをなくす開発を心がけています。
-
+                極力外注を避けワンストップで
+                %br
+                システムを開発いたします。
+            %footer.home-method-features-item__footer
+              = link_to "/entrusted-development/#development-2", class: "home-method-features-item__footer-link" do
+                くわしく
           .home-method-features-item
             %header.home-method-features-item__header
+              = image_tag("method-3.svg", class: "home-method-features-item__image")
               %h3.home-method-features-item__title
-                導入・運用まで安心のサポート
+                納品して終わり、という
+                %br
+                システム開発は行いません。
             .home-method-features-item__body
               %p
-                お客様の思いを理解した開発担当者が導入教育、および導入後の運用をサポートします。お客様の意思を理解し、納品したシステムの隅々まで理解した技術者だからこそできるきめ細かなサポート、そして素早い対応をお約束します。
+                システム開発の「本当」の本番は
+                %br
+                導入・運用フェーズから始まります。
+            %footer.home-method-features-item__footer
+              = link_to "/entrusted-development/#development-3", class: "home-method-features-item__footer-link" do
+                くわしく
 
-      .home-method-action
-        = link_to "/entrusted-development/index.html", class: "home-method-action__link" do
+      .content-action
+        = link_to "/entrusted-development/index.html", class: "content-action__link" do
           受託開発について

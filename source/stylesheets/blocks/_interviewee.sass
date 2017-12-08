@@ -1,0 +1,30 @@
+.interviewee
+  display: flex
+
+.interviewee__image-container
+  $size: 5rem
+  flex: 0 0 $size
+  +size($size)
+  background-color: #eae693
+  border-radius: 50%
+  overflow: hidden
+  +media-breakpoint-down(md)
+    $size: 3rem
+    flex: 0 0 $size
+    +size($size)
+
+.interviewee__image
+  display: block
+  +size(100%)
+
+.interviewee__text
+  margin-left: 1.5rem
+  +media-breakpoint-down(sm)
+    margin-left: 1rem
+
+.interviewee__name
+  +text-block(1rem 1.4 .25rem, $main-color 700)
+
+.interviewee__profile
+  p
+    +text-block(.75rem 1.5)

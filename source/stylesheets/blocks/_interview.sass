@@ -1,0 +1,43 @@
+.interviews
+  margin-bottom: 2rem
+
+.interview
+  background-color: #f6f7fa
+  padding: 2rem
+  +media-breakpoint-down(md)
+    padding: 1.5rem
+  +media-breakpoint-down(sm)
+    [class*=col-]:not(:last-child) &
+      margin-bottom: 1.5rem
+
+
+.interview__items
+  margin-top: 1.5rem
+
+.interview-item
+  &:not(:last-child)
+    margin-bottom: 1rem
+    +media-breakpoint-down(sm)
+      margin-bottom: .75rem
+
+.interview-item__header
+  padding-left: 2.5rem
+  +position(relative)
+  &::before
+    content: ""
+    +position(absolute, left 0, top .625rem)
+    background-color: #3f696e
+    +size(1.5rem .0625rem)
+
+.interview-item__title
+  +text-block(.8125rem 1.5, 600 #3f696e)
+
+.interview-item__body
+  +position(relative)
+  +padding(vertical, .75rem)
+  p
+    +text-block(.8125rem 1.8 .5rem)
+    +media-breakpoint-down(sm)
+      font-size: .75rem
+  *:last-child
+    margin-bottom: 0

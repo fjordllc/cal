@@ -1,0 +1,65 @@
+.work
+  = partial "work_header"
+  .page-contents
+    .container.is-sm
+      %header.work__header
+        .work__image-container
+          = image_tag("work-2.svg", class: "cases-item__image")
+        %h1.work__title
+          運送業向け 配送スケジュール管理システム
+      .work__summary.is-long-text
+        %p
+          大手アパレル企業様からイベント会場への商品の配送を受託しているB社様。
+          %br
+          配送依頼をExcelで受領後、分類分け～協力会社への配送指示書の作成を全て手作業で行っていました。
+          %br
+          この業務をシステム化することで、業務効率の向上のほか、属人化してい業務の標準化や作業進捗の見える化を実現しました。
+      %ul.work__features
+        %li.work__feature
+          .work__feature-label
+            .work__feature-label-title
+              特徴
+            .work__feature-label-count
+              1
+          .work__feature-value
+            ExcelライクなUIで直観的な操作が可能。
+        %li.work__feature
+          .work__feature-label
+            .work__feature-label-title
+              特徴
+            .work__feature-label-count
+              2
+          .work__feature-value
+            データ / ビジネスロジックを外部Webサーバ上に配置。複数の拠点でインターネット経由でデータをリアルタイムに共有。
+        %li.work__feature
+          .work__feature-label
+            .work__feature-label-title
+              特徴
+            .work__feature-label-count
+              3
+          .work__feature-value
+            クライアントアプリケーションとサーバアプリケーションをWebAPIで疎結合にすることで、将来的なマルチデバイス化が容易。
+      %table.work__data
+        %tbody
+          %tr
+            %th
+              開発期間
+            %td
+              3人月
+          %tr
+            %th
+              アーキテクチャ
+            %td
+              クライアント / サーバ型、RESTAPI
+          %tr
+            %th
+              開発技術
+            %td
+              C#6.0、PHP5.6（SlimFramework3）、MariaDB
+          %tr
+            %th
+              実行環境
+            %td
+              \.NET Framework 4.6（クライアント側）、CentOS7（サーバ側）
+
+      = partial "work_action"

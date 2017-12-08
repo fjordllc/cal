@@ -1,0 +1,63 @@
+.work
+  = partial "work_header"
+  .page-contents
+    .container.is-sm
+      %header.work__header
+        .work__image-container
+          = image_tag("work-1.svg", class: "cases-item__image")
+        %h1.work__title
+          観光業向け レストラン船予約管理システム
+      .work__summary.is-long-text
+        %p
+          大型客船による観光・レストラン事業を運営されているA社様向け業務システム。
+          %br
+          予約の受付から始まり、乗船券の発行～ご精算、最終的には売上に関するの統計情報の出力までワンストップで実現しました。
+      %ul.work__features
+        %li.work__feature
+          .work__feature-label
+            .work__feature-label-title
+              特徴
+            .work__feature-label-count
+              1
+          .work__feature-value
+            システムが稼働するのは陸上と船上。ネットワークが全くつながらない2つの環境で日々同じデータを連携する仕組みをご提案。
+        %li.work__feature
+          .work__feature-label
+            .work__feature-label-title
+              特徴
+            .work__feature-label-count
+              2
+          .work__feature-value
+            ホームページからのリアルタイム予約を最小コストで実現。
+        %li.work__feature
+          .work__feature-label
+            .work__feature-label-title
+              特徴
+            .work__feature-label-count
+              3
+          .work__feature-value
+            365日稼働を可能とする為、高可用性、高保守性を確保。
+      %table.work__data
+        %tbody
+          %tr
+            %th
+              開発期間
+            %td
+              70人月
+          %tr
+            %th
+              アーキテクチャ
+            %td
+              クライアント / サーバ型
+          %tr
+            %th
+              開発技術
+            %td
+              C#6.0、SQLServer2014
+          %tr
+            %th
+              実行環境
+            %td
+              .Net Framework 4.6
+
+      = partial "work_action"
