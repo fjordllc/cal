@@ -1,15 +1,23 @@
 .home-method-features
   margin-top: 3rem
+  +media-breakpoint-down(sm)
+    margin-top: -1rem
 
 .home-method-features__items
   display: flex
   +margin(horizontal, -1.5rem)
+  +media-breakpoint-down(sm)
+    display: block
+    +margin(horizontal, 0)
 
 .home-method-features-item
   +padding(horizontal, 1.5rem)
   flex: 0 0 33.33%
   +media-breakpoint-down(sm)
     display: block
+    +padding(horizontal, 0)
+    &:not(:last-child)
+      margin-bottom: 1.5rem
 
 .home-method-features-item__header
   margin-bottom: 1rem
@@ -19,15 +27,20 @@
   display: block
   margin: 0 auto
   margin-bottom: 1.5rem
+  +media-breakpoint-down(sm)
+    width: 8rem
+    margin-bottom: 1rem
 
 .home-method-features-item__title
   +text-block(1.125rem 1.45, 600 center)
   +media-breakpoint-down(sm)
-    font-size: 1rem
+    font-size: .875rem
 
 .home-method-features-item__body
   p
     +text-block(.875rem 1.6, center)
+    +media-breakpoint-down(sm)
+      font-size: .75rem
 
 .home-method-features-item__footer
   margin-top: .25rem
