@@ -14,10 +14,14 @@
     height: $header-height-sm
 
 .header__site-title-image
-  +size(auto ($header-height - 1.25rem))
+  +size(auto ($header-height - 1.5rem))
   display: block
+  +ie-11
+    +size(27.5rem auto)
+  +media-breakpoint-down(md)
+    +size(auto ($header-height - 2.375rem))
   +media-breakpoint-down(sm)
-    +size(auto ($header-height-sm - 1.25rem))
+    +size(auto ($header-height-sm - 2.375rem))
 
 body
   padding-top: $header-height

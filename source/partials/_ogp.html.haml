@@ -1,19 +1,25 @@
 %head{:prefix => "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"}
 
 - if current_page.data.title
-    %title= current_page.data.title | "株式会社コンピュータアドバイザー"
+  %title= "#{current_page.data.title} | 株式会社コンピュータアドバイザー"
   %meta{content: "#{current_page.data.title} | 株式会社コンピュータアドバイザー", property: "og:title"}
 - else
-    %title= "株式会社コンピュータアドバイザー"
-    %meta{content: "株式会社コンピュータアドバイザー", property: "og:title"}
-%meta{content: "株式会社コンピュータアドバイザー", property: "og:site_name"}
-%meta{content: " ページのディスクリプション", property: "og:description"}
+  %title= "株式会社コンピュータアドバイザー"
+  %meta{content: "株式会社コンピュータアドバイザー", property: "og:title"}
 
+- if current_page.data.description
+  %meta{descriptiont: current_page.data.description}
+  %meta{content: current_page.data.description, property: "og:description"}
+- else
+  %meta{descriptiont: "株式会社コンピュータアドバイザーは業務アプリケーション開発、パッケージソリューション開発・販売、ITコンサルティング等、幅広いITサービスをご提供してます。"}
+  %meta{content: "株式会社コンピュータアドバイザーは業務アプリケーション開発、パッケージソリューション開発・販売、ITコンサルティング等、幅広いITサービスをご提供してます。", property: "og:description"}
+
+%meta{content: "株式会社コンピュータアドバイザー", property: "og:site_name"}
 %meta{content: "website", property: "og:type"}
 %meta{content: "http://www.cal-tky.co.jp/", property: "og:url"}
 %meta{content: "http://www.cal-tky.co.jp/images/og-image.png", property: "og:image"}
 
-/ Facebook用設定
+-# Facebook用設定
 %meta{content: "320181321796810", property: "fb:app_id"}
-/ ※ Twitter共通設定
+-# Twitter共通設定
 %meta{content: "summary", name: "twitter:card"}

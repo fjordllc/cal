@@ -1,6 +1,36 @@
-.regal
+---
+title: お問い合わせ
+description: お問い合わせはお電話、またはお問合せ専用フォームより承ります。
+---
+
+.contact
   %header.page-header
     .container
       %h1.page-header__title
         お問い合わせ
-  .regal__body
+  .page-contents
+    .page-contents__item
+      .container.is-sm
+        .contact__description
+          %p
+            お問い合わせはお電話、
+            %br
+            またはお問合せ専用フォームより承ります。
+        .contact__phone
+          .contact__phone-icon
+            %i.fa.fa-phone
+          .contact__phone-number
+            03-5769-3155
+        .content-action.contact__form
+          .content-action__inner
+            = link_to "https://pro.form-mailer.jp/fms/32b3750033768", class: "content-action__link", target: "_blank" do
+              お問合せ専用フォーム
+
+        %nav.content-nav
+          %ul.content-nav__items
+            %li.content-nav__item
+              = link_to "/privacy.html", class: "content-nav__item-link" do
+                プライバシーポリシー
+            %li.content-nav__item
+              = link_to "/privacy_legal.html", class: "content-nav__item-link" do
+                個人情報のお取扱いについて

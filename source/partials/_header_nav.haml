@@ -1,0 +1,20 @@
+%nav.header-nav
+  %ul.header-nav__items
+    %li.header-nav__item
+      = link_to "/entrusted-development/index.html", class: "header-nav__item-link #{current_page.url.include?("/entrusted-development") ? "is-current" : ""}" do
+        受託開発
+    %li.header-nav__item
+      = link_to "/works/index.html", class: "header-nav__item-link #{current_page.url.include?("/works") ? "is-current" : ""}" do
+        実績
+    %li.header-nav__item
+      = link_to "/recruit/index.html", class: "header-nav__item-link #{current_page.url.include?("/recruit") ? "is-current" : ""}" do
+        採用情報
+    %li.header-nav__item
+      = link_to "/profile/index.html", class: "header-nav__item-link #{current_page.url.include?("/profile") ? "is-current" : ""}" do
+        会社概要
+    %li.header-nav__item
+      = link_to "/access/index.html", class: "header-nav__item-link #{current_page.url.include?("/access") ? "is-current" : ""}" do
+        アクセス
+    %li.header-nav__item
+      = link_to "/contact.html", class: "header-nav__item-link #{current_page.url.include?("/contact.html") ? "is-current" : ""}" do
+        お問い合わせ

@@ -17,21 +17,30 @@
   +padding(horizontal, 1.25rem)
   flex: 0 0 33.33%
   padding-bottom: 2rem
+  +ie-11
+    flex: 0 0 28.33%
   +media-breakpoint-down(md)
     +padding(horizontal, .75rem)
+    max-width: 30rem
+    +margin(horizontal, auto)
   +media-breakpoint-down(sm)
     +padding(horizontal, 0)
     width: 100%
 
 .cases-item__inner
   border: solid .0625rem #d9d9d9
-  padding: 1rem 1.5rem 1.5rem
+  padding: 1rem 1.5rem 4rem
   height: 100%
+  +position(relative)
+  +media-breakpoint-down(sm)
+    padding: .75rem 1rem 4rem
 
 .cases-item__image-container
   margin-bottom: .5rem
   max-width: 10rem
   +margin(horizontal, auto)
+  +media-breakpoint-down(sm)
+    max-width: 7rem
 
 .cases-item__title
   +text-block(1rem 1.4 .5rem, 600)
@@ -50,9 +59,6 @@
 
 .cases-item__footer
   display: flex
-  justify-content: flex-end
-  margin-top: .75rem
-
-.cases-item__footer-link
-  +text-block(.75rem 1)
-  +hover-link-reversal
+  justify-content: center
+  margin-bottom: 1rem
+  +position(absolute, left 0, bottom 0, right 0)

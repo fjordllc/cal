@@ -1,0 +1,45 @@
+.contact__description
+  margin-bottom: 1.5rem
+  p
+    +text-block(.875rem 1.6, center)
+
+.contact__phone
+  display: flex
+  align-items: center
+  justify-content: center
+
+.contact__phone-icon
+  +text-block(1.5rem 1)
+  margin-right: .5rem
+
+
+.contact__phone-number
+  +text-block(1.75rem 1, center 700)
+  font-family: 'Source Sans Pro', sans-serif
+  +top(-2px)
+
+.contact__form
+  margin-top: 1.5rem
+
+.content-nav
+  margin-top: 1.75rem
+  +media-breakpoint-down(sm)
+    margin-top: 1.5rem
+
+.content-nav__items
+  display: flex
+  justify-content: center
+  +margin(horizontal, -.75rem)
+  +media-breakpoint-down(sm)
+    display: block
+
+.content-nav__item
+  +padding(horizontal, .75rem)
+  text-align: center
+  +media-breakpoint-down(sm)
+    &:not(:last-child)
+      margin-bottom: .75rem
+
+.content-nav__item-link
+  +text-block(.8125rem 1.45, $main-color)
+  +hover-link-reversal

@@ -3,11 +3,14 @@ body
   min-height: 100vh
   display: flex
   flex-direction: column
+  +ie-11
+    display: block
 
 .body__inner
   flex: 100
 
 .container
+  +padding(horizontal, 2rem)
   +media-breakpoint-down(md)
     +padding(horizontal, $container-horizontal-padding-md)
   +media-breakpoint-down(sm)
@@ -16,3 +19,25 @@ body
     max-width: 40rem
   &.is-md
     max-width: 48rem
+
+.to-top
+  +position(fixed, right 2.75rem, bottom 1rem)
+  +size(2.75rem)
+  background-color: rgba(white, .4)
+  border: solid 1px $main-color
+  +text-block(1.5rem 1, flex $main-color)
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  transition: all .2s ease-out
+  .fa
+    +top(-.125rem)
+  &:hover
+    background-color: $main-color
+    color: $reversal-text
+  +media-breakpoint-down(md)
+    +position(right 1rem, bottom 3rem)
+    &:hover
+      background-color: rgba(white, .4)
+      color: $main-color
+      border: solid 1px $main-color

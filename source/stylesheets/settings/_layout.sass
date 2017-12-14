@@ -3,3 +3,9 @@ $header-height-sm: 3.125rem
 
 $container-horizontal-padding-md: 2rem
 $container-horizontal-padding-sm: 1rem
+
+=ie-11
+  @media all and (-ms-high-contrast: none)
+    *::-ms-backdrop,
+    &
+      @content

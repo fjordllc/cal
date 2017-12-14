@@ -1,13 +1,24 @@
 .content-action
   margin-top: 3rem
+
+.content-action__inner
   display: flex
+  flex-direction: column
+  align-items: center
   justify-content: center
+
+.content-action__description
+  p
+    +text-block(.875rem 1.6 1rem, center $main-color)
+    +media-breakpoint-down(sm)
+      font-size: .75rem
 
 .content-action__link
   display: flex
   align-items: center
   justify-content: center
   +size(20rem 3.5rem)
+  max-width: 100%
   +text-block(1rem 1.45, $main-color 600)
   border: solid .0625rem $main-color
   transition: all .2s ease-in
