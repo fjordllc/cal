@@ -1,32 +1,51 @@
-.faq__items
-  margin-top: 2rem
+.faq__items-title
+  +text-block(1.125rem 1.45 1rem)
 
 .faq-item
   &:not(:last-child)
-    margin-bottom: 2rem
+    border-bottom: dashed 1px #c9cbd2
+    padding-bottom: 1rem
+    margin-bottom: 1rem
 
 .faq-item__header
-  padding-left: 3.5rem
+  padding-left: 2.5rem
   +position(relative)
-  +padding(vertical, .5rem)
-  min-height: 2.75rem
+  +padding(vertical, .25rem)
+  margin-bottom: .5rem
+  min-height: 2.125rem
   &::before
     content: "Q"
     +position(absolute, left 0, top 0, bottom 0)
     background-color: #a7d8df
-    +text-block(1.25rem 1, flex #578287 800)
+    +text-block(1.125rem 1, flex #578287 800)
     align-items: center
     justify-content: center
-    +size(2.5rem)
+    +size(1.75rem)
     border-radius: 50%
 
 .faq-item__title
-  +text-block(1rem 1.5, 600 #3f696e)
+  +text-block(.875rem 1.5, 600 #3f696e)
+  +media-breakpoint-down(sm)
+    font-size: .75rem
 
 .faq-item__body
   +position(relative)
-  +padding(vertical, .75rem)
+  +padding(vertical, .25rem)
   p
     +text-block(.875rem 1.6 .5rem)
+    +media-breakpoint-down(sm)
+      font-size: .75rem
   *:last-child
     margin-bottom: 0
+  padding-left: 2.5rem
+  +position(relative)
+  &::before
+    content: "A"
+    +position(absolute, left 0, top 0, bottom 0)
+    padding-left: 1px
+    background-color: #e5d1ad
+    +text-block(1.125rem 1, flex #8e7546 800)
+    align-items: center
+    justify-content: center
+    +size(1.75rem)
+    border-radius: 50%

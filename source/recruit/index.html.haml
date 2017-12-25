@@ -20,32 +20,41 @@ description: コンピュータアドバイザーは「エンジニア」が主�
   .page-contents
     .recruit-description.page-contents__item
       .container.is-sm
-        %h3.recruit-description__title.page-contents__item-title
-          あああああああああああああああああああ
-        .recruit-description__body.is-long-text.js-mojick
-          %p
-            説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文。
-          %p
-            説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文。
-          %p
-            説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文。
-          %p
-            説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文。
-          %p
-            説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文。
-          %p
-            説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文。
-          %p
-            説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文。
+        .recruit-description__body.is-long-text
+          %p.js-mojick
+            コンピュータアドバイザーは「社員（=エンジニア）」を大切にする会社です。
+            %br
+            同規模の企業と比較して手厚い福利厚生制度を整えていますので、安心して長期に渡り勤務することが可能です。
+            %br
+            また、書籍の購入支援や就業時間中の社外セミナー・勉強会への参加等、エンジニアとしてのスキルアップを支援する仕組みも備えています。
 
-        .page-contents__action
-          .content-action__inner
-            = link_to "/contact.html", class: "content-action__link" do
-              お問い合わせ
+    = partial "recruit/recruit_process"
+
+
+    .faq.page-contents__item
+      .container.is-md
+        %h2.faq__title.page-contents__item-title
+          よくある質問
+
+        .tabs
+          %ul.js-tabs.tabs__items
+            %li.tabs__item
+              %a.tabs__item-action{"data-href": "#js-view-1"}
+                新卒・キャリア共通
+            %li.tabs__item
+              %a.tabs__item-action{"data-href": "#js-view-2"}
+                新卒採用向け
+            %li.tabs__item
+              %a.tabs__item-action{"data-href": "#js-view-3"}
+                キャリア採用向け
+
+        = partial "recruit/faq_1"
+        = partial "recruit/faq_2"
+        = partial "recruit/faq_3"
 
     .interviews
       .container
-        %h2.faq__title.page-contents__item-title
+        %h2.interviews__title.page-contents__item-title
           社員インタビュー
         .row.is-gutter-width-40-lg-up.is-gutter-width-24-md-down
           .col-xs-12.col-md-6

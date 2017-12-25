@@ -1,0 +1,38 @@
+.tabs
+  margin-bottom: 1.5rem
+
+.tabs__items
+  display: flex
+  +position(relative)
+  &::before
+    content: ""
+    display: block
+    +size(100% 1px)
+    background-color: $default-text
+    +position(absolute, left 0, bottom 1px)
+
+.tabs__item-action
+  +text-block(.8125rem 1.4, flex)
+  border: 1px solid transparent
+  padding: .75rem 1rem
+  +position(relative, 1)
+  margin-bottom: 1px
+  cursor: pointer
+  +media-breakpoint-down(sm)
+    padding: .25rem .5rem
+    font-size: .75rem
+  &:hover
+    color: $main-color
+    text-decoration: underline
+    +media-breakpoint-down(md)
+      text-decoration: none
+  &.is-active
+    +border(horizontal top, 1px solid $default-text)
+    border-bottom: 1px solid white
+    pointer-events: none
+
+.js-tab-content
+	display: none
+
+.js-tab-content.is-show
+    display: block

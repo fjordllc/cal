@@ -1,0 +1,34 @@
+.recruit-process.page-contents__item
+  .container
+    %h3.recruit-process__title.page-contents__item-title
+      応募から採用までの流れ
+    .recruit-process__body
+      .recruit-process__items
+        .recruit-process__item
+          .recruit-process__item-inner
+            %p.js-mojick
+              履歴書及び職務経歴書での選考
+            .recruit-process__item-image-container
+              = image_tag("recruit-process-1.svg")
+        .recruit-process__item
+          .recruit-process__item-inner
+            %p.js-mojick
+              担当者による面接（2回程度）と適正検査の実施
+            .recruit-process__item-image-container
+              = image_tag("recruit-process-2.svg")
+        .recruit-process__item
+          .recruit-process__item-inner
+            %p.js-mojick.is-text-align-center
+              社長面談
+            .recruit-process__item-image-container
+              = image_tag("recruit-process-3.svg")
+        .recruit-process__item
+          .recruit-process__item-inner
+            %p.js-mojick.is-text-align-center
+              採用!!!
+            .recruit-process__item-image-container
+              = image_tag("recruit-process-4.svg")
+    .page-contents__action
+      .content-action__inner
+        = link_to "/contact.html", class: "content-action__link" do
+          お問い合わせ
