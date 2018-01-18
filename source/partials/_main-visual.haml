@@ -1,7 +1,18 @@
 .main-visual
   .container
     .main-visual__inner
-      %h2.main-visual__lead.js-mojick
-        「あなたの目線」<br>その先を創る
-      %p.main-visual__sub-lead.js-mojick
-        Create Your Future
+      .main-visual__text
+        %h2.main-visual__lead.js-mojick
+          「あなたの目線」<br>その先を創る
+        %p.main-visual__sub-lead.js-mojick
+          Create Your Future
+  %video.main-visual__video#js-main-visual__video(autoplay muted loop poster="#{asset_path("jpg", "/images/main-visual-movie")}")
+    %source(src="#{asset_path("mp4", "/images/main-visual-movie")}")
+    = image_tag('main-visual-movie.jpg', alt: "メインビジュアル", class: "main-visual__image")
+
+:javascript
+  var video = document.querySelector('video');
+  window.onload = function(){
+    video.defaultPlaybackRate = 0.5;
+    video.load();
+  }

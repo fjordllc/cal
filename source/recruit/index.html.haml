@@ -52,6 +52,9 @@ description: コンピュータアドバイザーは「エンジニア」が主�
         = partial "recruit/faq_2"
         = partial "recruit/faq_3"
 
+      = partial "recruit/recruit_action"
+
+
     .interviews
       .container
         %h2.interviews__title.page-contents__item-title
@@ -64,8 +67,4 @@ description: コンピュータアドバイザーは「エンジニア」が主�
             .interview
               = partial "recruit/interview_2"
 
-    .faq.page-contents__item
-      .container.is-sm
-        .page-contents__action
-          = link_to "/contact.html", class: "content-action__link" do
-            お問い合わせ
+    = partial "recruit/recruit_action"

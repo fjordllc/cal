@@ -1,7 +1,19 @@
 .other-cases
-  margin-top: 2.5rem
+  margin-top: 3.5rem
+  +media-breakpoint-down(sm)
+    margin-top: 2rem
 
 .other-cases-item
-  border-bottom: dotted 1px #ccc
+  border-bottom: dashed 1px #ccc
   padding-bottom: 1rem
   margin-bottom: 1rem
+
+.other-cases-item__title
+  +text-block(1rem 1.45 .25rem, 600 $main-color)
+  +media-breakpoint-down(sm)
+    font-size: .875rem
+
+.other-cases-item__item
+  +text-block(.75rem 1.45)
+  +media-breakpoint-down(sm)
+    font-size: .625rem

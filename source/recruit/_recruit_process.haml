@@ -28,7 +28,4 @@
               採用!!!
             .recruit-process__item-image-container
               = image_tag("recruit-process-4.svg")
-    .page-contents__action
-      .content-action__inner
-        = link_to "/contact.html", class: "content-action__link" do
-          お問い合わせ
+    = partial "recruit/recruit_action"

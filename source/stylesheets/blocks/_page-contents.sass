@@ -1,9 +1,21 @@
 .page-contents
   +padding(vertical, 2rem 3rem)
+  +media-breakpoint-down(sm)
+    +padding(vertical, 1rem 2rem)
 
 .page-contents__item
   &:not(:last-child)
     margin-bottom: 3.5rem
+  &.is-short-description
+    margin-bottom: 2rem
+    p
+      +text-block(.875rem 1.6, center)
+    +media-breakpoint-down(sm)
+      margin-bottom: 1.5rem
+      p
+        +text-block(.75rem 1.6, left)
+        br
+          display: none
 
 .page-contents__item-title
   +text-block(1.5rem 1.45 1.25rem, 700)
