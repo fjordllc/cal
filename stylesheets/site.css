@@ -20615,6 +20615,19 @@ body {
     font-size: 1.5em; }
   .regal__body .is-long-text h3 {
     font-size: 1.25em; }
+  .is-long-text .flex-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .is-long-text .flex-div img {
+      border: none;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+      margin-left: 0;
+      margin-right: 0; }
 
 .sm-link {
   font-size: 0.75rem;

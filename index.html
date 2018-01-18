@@ -122,21 +122,18 @@ Create Your Future
 </div>
 </div>
 </div>
-<video autoplay class='main-visual__video' loop muted poster='images/home_main_picture.jpg'>
-<source src='images/demo-movie1.mp4'>
-<img src="images/home_main_picture.jpg" alt="メインビジュアル" class="main-visual__image" />
+<video autoplay class='main-visual__video' id='js-main-visual__video' loop muted poster='images/main-visual-movie.jpg'>
+<source src='images/main-visual-movie.mp4'>
+<img src="images/main-visual-movie.jpg" alt="メインビジュアル" class="main-visual__image" />
 </video>
 </div>
-<div class='container is-text-align-center'>
-<a href="/">デモ1
-</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="index2.html">デモ2
-</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="index3.html">デモ3
-</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="index4.html">デモ4
-</a></div>
-
+<script>
+  var video = document.querySelector('video');
+  window.onload = function(){
+    video.defaultPlaybackRate = 0.5;
+    video.load();
+  }
+</script>
 
 <div class='home-contents'>
 <div class='home-content'>
