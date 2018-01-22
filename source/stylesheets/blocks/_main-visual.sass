@@ -1,13 +1,14 @@
 .main-visual
-  border-top: solid .125rem $main-color
-  border-bottom: solid .0625rem $main-color
+  background-color: #206193
   +position(relative)
   overflow: hidden
   height: 400px
   +media-breakpoint-down(md)
-    height: 300px
+    height: auto
   +media-breakpoint-down(sm)
-    height: 160px
+    height: auto
+  .container
+    +position(relative, 3)
 
 .main-visual__video
   +size(100% auto)
@@ -22,6 +23,12 @@
     +position(top -10%)
   +media-breakpoint-down(xs)
     +position(top 0)
+  &.is-video
+    z-index: 2
+    +media-breakpoint-down(sm)
+      display: none
+  &.is-image
+    z-index: 1
 
 .main-visual__inner
   height: 25rem
@@ -31,26 +38,19 @@
   justify-content: center
   +padding(vertical, 1.5rem)
   +position(relative, 1)
+  +media-breakpoint-down(md)
+    height: auto
+    +padding(vertical, 4rem)
   +media-breakpoint-down(sm)
     height: auto
-    +padding(vertical, 1.5rem)
+    +padding(vertical, 2rem)
 
 .main-visual__text
   color: $reversal-text
 
-.main-visual__logo-image
-  +size(100% auto)
-  display: block
-  +margin(horizontal, auto)
-
-.main-visual__lead
-  +text-block(2.5rem 1.45, center 700)
-  +media-breakpoint-down(sm)
-    font-size: 1.25rem
-
-.main-visual__sub-lead
-  margin-top: .75rem
-  +text-block(2rem 1.45, center 700)
-  font-family: 'Crimson Text', serif
-  +media-breakpoint-down(sm)
-    font-size: 1rem
+.main-visual__site-title-image
+  +size(21rem auto)
+  +media-breakpoint-down(md)
+    width: 18rem
+  +media-breakpoint-down(xs)
+    width: 10rem

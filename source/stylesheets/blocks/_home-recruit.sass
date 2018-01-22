@@ -1,9 +1,11 @@
 .home-recruit
-  background-image: image_url("sample-recruit-bg.jpg")
+  background-image: image_url("recruit-bg.jpg")
   background-size: cover
   background-position: top center
   +padding(vertical, 3rem)
   +position(relative)
+  +media-breakpoint-down(sm)
+    +padding(vertical, 2rem)
 
 .home-recruit__inner
   +position(relative, 1)

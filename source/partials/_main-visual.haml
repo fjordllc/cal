@@ -2,10 +2,7 @@
   .container
     .main-visual__inner
       .main-visual__text
-        %h2.main-visual__lead.js-mojick
-          「あなたの目線」<br>その先を創る
-        %p.main-visual__sub-lead.js-mojick
-          Create Your Future
-  %video.main-visual__video#js-main-visual__video(autoplay muted loop poster="#{asset_path("jpg", "/images/main-visual-movie")}")
+        = image_tag("site-title.svg", class: "main-visual__site-title-image", alt: "「あなたの目線」その先を創る")
+  %video.main-visual__video#js-main-visual__video.is-video(autoplay muted loop poster="#{asset_path("jpg", "/images/main-visual-movie")}")
     %source(src="#{asset_path("mp4", "/images/main-visual-movie")}")
-    = image_tag('main-visual-movie.jpg', alt: "メインビジュアル", class: "main-visual__image")
+  = image_tag('main-visual-movie.jpg', alt: "メインビジュアル", class: "main-visual__video is-image", alt: "")

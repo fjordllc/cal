@@ -4,12 +4,14 @@
   background-position: center center
   +padding(vertical, 3rem)
   +position(relative)
+  +media-breakpoint-down(sm)
+    +padding(vertical, 2rem)
 
 .development-main-visual__inner
   +position(relative, 1)
 
 .development-main-visual__title
-  +text-block(2rem 1.45 .75rem, 700 $reversal-text center)
+  +text-block(2rem 1.45, 700 $reversal-text center)
   +media-breakpoint-down(sm)
     font-size: 1.125rem
 
