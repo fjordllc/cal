@@ -1,7 +1,12 @@
 !!!
 %html{lang: "ja"}
-  %head
-    = partial "partials/analytics"
+  %head{:prefix => "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112766376-1"></script>
+    :javascript
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-112766376-1');
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
     %meta{:charset => "utf-8"}
     %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}
