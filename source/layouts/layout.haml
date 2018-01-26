@@ -1,7 +1,7 @@
 !!!
 %html{lang: "ja"}
   %head{:prefix => "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"}
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112766376-1"></script>
+    %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-112766376-1"}
     :javascript
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -14,7 +14,7 @@
     = stylesheet_link_tag "site"
     = stylesheet_link_tag "http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     = stylesheet_link_tag "https://fonts.googleapis.com/css?family=Crimson+Text"
-    = stylesheet_link_tag "  https://fonts.googleapis.com/css?family=Source+Sans+Pro:900i,700"
+    = stylesheet_link_tag "https://fonts.googleapis.com/css?family=Source+Sans+Pro:900i,700"
     = partial "partials/favicons"
     = partial "partials/ogp"
   %body.body
