@@ -2,6 +2,8 @@
   margin-top: 1.5rem
   display: flex
   +margin(horizontal, -1rem)
+  +ie-11
+    justify-content: center
   +media-breakpoint-down(sm)
     display: block
     +margin(horizontal, 0)
@@ -9,6 +11,8 @@
 .recruit-process__item
   flex: 0 0 25%
   +padding(horizontal, 1rem)
+  +ie-11
+    max-width: calc(25% - 1rem)
   +media-breakpoint-down(sm)
     +padding(horizontal, 0)
     padding-bottom: 2rem
